@@ -1,0 +1,18 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/HomeMaster.master" AutoEventWireup="true" CodeFile="PLM.master.cs" Inherits="PLM" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:Menu runat="server" ID="PLMMainMenu" Orientation="Horizontal" EnableViewState="false" Style="z-index: 1; left: 25px; top: 111px; position: absolute; height: 25px; width: 95%">
+        <DynamicMenuItemStyle BackColor="#EEEEEE" VerticalPadding="10px" Font-Bold="True" HorizontalPadding="10px" />
+        <Items>
+            <asp:MenuItem Text="Show Prospects" Value="Show Prospects"></asp:MenuItem>
+            <asp:MenuItem Text="Show Companies" Value="Show Companies"></asp:MenuItem>
+        </Items>
+        <StaticMenuItemStyle ItemSpacing="10px" VerticalPadding="4px" HorizontalPadding="10px" Font-Bold="True" />
+        <StaticMenuStyle HorizontalPadding="10px" VerticalPadding="5px" />
+    </asp:Menu>
+</asp:Content>
+
