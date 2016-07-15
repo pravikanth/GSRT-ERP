@@ -16,11 +16,11 @@ public partial class UpdateCompany : System.Web.UI.Page
             AddressDB addDb = new AddressDB();
             IndustryDB indDb = new IndustryDB();
             List<CompanyInformation> companyInfo = moreInfoDb.getCompanies();
-            int i = 1;
+            int i = 0;
             foreach (CompanyInformation cInfo in companyInfo)
             {
                 ddlCompanies.Items.Add(cInfo.CompanyName);
-                ddlCompanies.Items[i].Value = cInfo.CompanyId.ToString();
+                ddlCompanies.Items[i++].Value = cInfo.CompanyId.ToString();
             }
             ddlSicCodes.DataSource = sicDb.getSicCodes(1);
             ddlSicCodes.DataBind();
